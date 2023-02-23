@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../static/game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Lotki</title>
+</head>
+<body>
+      <ul class="cards">
+        <li>
+          <div class="card" id="card1" style="box-shadow: 0 8px 15px #a5a5a5;">
+            <img src="../img/dart.jpg" class="card__image" alt="" />
+            <div class="score-active" id="score1"> 
+                501 
+            </div>
+            <div class="card__overlay__active" id="overlay1">
+              <div class="card__header__active" id="header1">
+                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                <div class="card__header-text">
+                  <h3 class="card__title" style="display: inline-block;">PLAYER 1</h3>
+                  <!-- <button id="return" style="display: inline-block;"><i class="fa fa-refresh"></i></button>  -->
+                </div>
+                <div id="input1-div">
+                    <input id="input1" type="number" min="0" max="180" placeholder="POINTS" >
+                    <button id="input1-button" onclick="mainPlayer1()" style="display: none;"> Button </button><br>
+                </div>
+                <div id="return1-div" style="display: none;">
+                    <input id="return1" type="submit" min="0" max="180" placeholder="RETURN" value="RETURN">
+                </div>
+              </div>
+              <div class="means">
+                <div class="match-mean">
+                    AVG
+                    <h1 id="mean1"> 0 </h1> 
+                </div>
+                <div class="leg-mean">
+                    AVG LEG
+                    <h1 id="legMean1">0</h1> 
+                </div> 
+                <div class="leg-mean">
+                    DARTS
+                    <h1 id="throwsPerLeg1">0</h1> 
+                </div> 
+                <div class="leg-mean">
+                    <h1></h1> 
+                </div> 
+                <div class="leg-mean">
+                    LEGS
+                    <h1 id="legs1" style="color: red;">0</h1> 
+                </div> 
+            </div>
+            <div class="means">
+                <div class="match-mean">
+                    40+
+                    <h3 id="40-plus1"> 0</h3> 
+                </div>
+                <div class="leg-mean">
+                    60+
+                    <h3 id="60-plus1"> 0 </h3> 
+                </div> 
+                <div class="leg-mean">
+                    80+
+                    <h3 id="80-plus1"> 0 </h3> 
+                </div> 
+                <div class="leg-mean">
+                    100+
+                    <h3 id="100-plus1"> 0 </h3> 
+                </div> 
+                <div class="leg-mean">
+                    120+
+                    <h3 id="120-plus1"> 0 </h3> 
+                </div> 
+                <div class="leg-mean">
+                    140+
+                    <h3 id="140-plus1"> 0 </h3> 
+                </div> 
+                <div class="leg-mean">
+                  HIGHEST
+                  <h3 id="highest1"> 0 </h3> 
+              </div> 
+              <div class="leg-mean">
+                  HIGHEST OUT
+                  <h3 id="highestOut1"> 0 </h3> 
+              </div> 
+            </div> 
+            </div> 
+        </div>      
+        </li>
+        <li>
+            <div class="card" id="card2">
+              <img src="../img/dart.jpg" class="card__image" alt="" />
+              <div class="score" id="score2"> 
+                  501 
+              </div>
+              <div class="card__overlay" id="overlay2">
+                <div class="card__header" id="header2">
+                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                  <div class="card__header-text">
+                    <h3 class="card__title" style="display: inline-block;">PLAYER 2</h3>                  
+                    <!-- <button id="return2" style="display: inline-block;"><i class="fa fa-refresh"></i></button>  -->
+                  </div>
+                  <div id="input2-div" style="display: none;">
+                    <input id="input2" type="number" min="0" max="180" placeholder="POINTS">
+                    <button id="input2-button" onclick="mainPlayer2()" style="display: none;"> Button </button><br>
+                  </div>
+                  <div id="return2-div">
+                    <input id="return2" type="submit" min="0" max="180" value="RETURN" >
+                  </div>
+                </div>
+                <div class="means">
+                    <div class="leg-mean">
+                        LEGS
+                        <h1 id="legs2" style="color: red;">0</h1> 
+                    </div> 
+                    <div class="leg-mean">
+                        <h1></h1> 
+                    </div> 
+                      <div class="match-mean">
+                          AVG
+                          <h1 id="mean2"> 0 </h1> 
+                      </div>
+                      <div class="leg-mean">
+                          AVG LEG
+                          <h1 id="legMean2"> 0 </h1> 
+                      </div> 
+                      <div class="leg-mean">
+                          DARTS
+                          <h1 id="throwsPerLeg2"> 0 </h1> 
+                      </div> 
+                  </div>
+                <input id="input2" type="number" min="0" max="180" placeholder="POINTS" style="display: none;">
+                  <button id="input2-button" onclick="mainPlayer2()" style="display: none;"> Button </button><br>
+                <div class="means">
+                  <div class="match-mean">
+                      40+
+                      <h3 id="40-plus2"> 0</h3> 
+                  </div>
+                  <div class="leg-mean">
+                      60+
+                      <h3 id="60-plus2"> 0 </h3> 
+                  </div> 
+                  <div class="leg-mean">
+                      80+
+                      <h3 id="80-plus2"> 0 </h3> 
+                  </div> 
+                  <div class="leg-mean">
+                      100+
+                      <h3 id="100-plus2"> 0 </h3> 
+                  </div> 
+                  <div class="leg-mean">
+                      120+
+                      <h3 id="120-plus2"> 0 </h3> 
+                  </div> 
+                  <div class="leg-mean">
+                      140+
+                      <h3 id="140-plus2"> 0 </h3> 
+                  </div> 
+                  <div class="leg-mean">
+                    HIGHEST
+                    <h3 id="highest2"> 0 </h3> 
+                </div> 
+                <div class="leg-mean">
+                    HIGHEST OUT
+                    <h3 id="highestOut2"> 0 </h3> 
+                </div> 
+              </div>  
+              </div>
+          </div>      
+          </li>    
+      </ul>
+      <div id="myModal" class="modal">
+        <div id="myModalContent" class="modal-content">
+          <h1> Check out in...  </h1>
+          <button id="one" class="modal-button">1 DART</button>
+          <button id="two" class="modal-button">2 DART</button>
+          <button id="three" class="modal-button">3 DART</button>
+        </div>     
+      </div>
+    <script src="../game.js"></script> 
+    <br>
+</body>
+</html>
